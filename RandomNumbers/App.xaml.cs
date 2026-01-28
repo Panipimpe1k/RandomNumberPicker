@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-
-namespace RandomNumbers
+﻿namespace RandomNumbers
 {
     public partial class App : Application
     {
