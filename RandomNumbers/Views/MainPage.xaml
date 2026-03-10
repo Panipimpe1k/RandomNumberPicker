@@ -12,7 +12,7 @@
                 Title="Wybierz klasę"
                 SelectedIndexChanged="OnClassChanged"/>
 
-        <CollectionView x:Name="StudentsList" HeightRequest="200" SelectionMode="Single" StyleClass="studentsList">
+        <CollectionView x:Name="StudentsList" HeightRequest="200" SelectionMode="None" StyleClass="studentsList">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Frame Padding="5" Margin="2" StyleId="StudentName">
