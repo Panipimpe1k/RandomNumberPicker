@@ -4,46 +4,59 @@
 
 .classPicker {
     background-color: #5e5c7a;
-    color: #38383b;
-    border-radius: 10;
+    color: white;
+    border-radius: 10px;
 }
 
 .studentsList {
     background-color: #dadae0;
-    border-radius: 10;
+    border-radius: 10px;
 }
 
 .mainButton {
     background-color: #575475;
     color: white;
-    border-radius: 8;
+    border-radius: 8px;
+    font-size: 16px;
 }
 
 .drawButton {
     background-color: #151326;
     color: white;
-    font-size: 18;
+    font-size: 20px;
+    border-radius: 10px;
 }
 
 .studentEntry {
     background-color: white;
-    color: #151326;
-    border-radius: 8;
+    border-radius: 8px;
 }
 
-#titleLabel {
-    font-size: 24;
-    color: white;
-    background-color: #4A148C;
+.studentInput {
+    background-color: #d1d1de;
+    border-radius: 8px;
 }
 
 #StudentName {
+    background-color: white;
+    border-radius: 8px;
+}
+
+#DrawnStudentLabel {
+    font-size: 24px;
+    color: white;
+    background-color: #4A148C;
+    padding: 10px;
+}
+
+#StudentEntry {
     background-color: #d1d1de;
-    border-radius: 0;
+    border-radius: 8px;
 }
 
 button {
     background-color: #5e5c7a;
     color: white;
-    font-size: 18;
+    font-size: 16px;
+    border-radius: 8px;
 }

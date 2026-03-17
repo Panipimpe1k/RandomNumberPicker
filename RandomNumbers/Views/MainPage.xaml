@@ -5,37 +5,42 @@
              Title="System losowania osoby"
              StyleClass="page">
 
-    <VerticalStackLayout Spacing="10" Padding="10">
+    <VerticalStackLayout Spacing="15" Padding="15">
 
         <Picker x:Name="ClassPicker"
                 StyleClass="classPicker"
                 Title="Wybierz klasę"
                 SelectedIndexChanged="OnClassChanged"/>
 
-        <CollectionView x:Name="StudentsList" HeightRequest="200" SelectionMode="None" StyleClass="studentsList">
+        <CollectionView x:Name="StudentsList" HeightRequest="200" SelectionMode="Single" StyleClass="studentsList">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Frame Padding="5" Margin="2" StyleId="StudentName">
-                        <Label Text="{Binding .}" FontSize="16"/>
+                    <Frame Padding="8"
+                           Margin="4"
+                           StyleClass="studentEntry">
+
+                        <Label Text="{Binding .}" />
+
                     </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
 
         <Entry x:Name="StudentEntry"
-               StyleClass="studentsList"
+               StyleClass="studentInput"
                Placeholder="Imie i nazwisko ucznia"/>
 
         <HorizontalStackLayout Spacing="10">
+            
             <Button Text="Dodaj" Clicked="OnAddStudent" StyleClass="mainButton"/>
-            <Button Text="Usuń zaznaczonego" Clicked="OnRemoveStudent"/>
-            <Button Text="Zapisz" Clicked="OnSave"/>
+            <Button Text="Usuń zaznaczonego" Clicked="OnRemoveStudent" StyleClass="mainButton"/>
+            <Button Text="Zapisz" Clicked="OnSave" StyleClass="mainButton"/>
+            
         </HorizontalStackLayout>
 
         <Button Text="Losuj osobę" Clicked="OnDrawStudent" StyleClass="drawButton"/>
 
         <Label x:Name="DrawnStudentLabel"
-               StyleId="titleLabel"
                HorizontalOptions="Center"/>
     </VerticalStackLayout>
 </ContentPage>

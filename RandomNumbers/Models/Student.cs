@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RandomNumbers.Models
+﻿namespace RandomNumbers.Models
 {
     public class Student
     {
