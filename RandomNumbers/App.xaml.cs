@@ -1,15 +1,18 @@
-﻿namespace RandomNumbers
-{
-    public partial class App : Application
-    {
-        public App()
-        {
-            InitializeComponent();
-        }
+﻿using Microsoft.Maui.Controls;
+using RandomNumbers.Views;
 
-        protected override Window CreateWindow(IActivationState? activationState)
+namespace RandomNumbers;
+
+public partial class App : Application
+{
+    public App()
+    {
+        InitializeComponent();
+
+        MainPage = new NavigationPage(new MainPage())
         {
-            return new Window(new AppShell());
-        }
+            BarBackgroundColor = Color.FromArgb("#b8a6db"),
+            BarTextColor = Colors.White
+        };
     }
 }
