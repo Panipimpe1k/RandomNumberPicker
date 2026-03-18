@@ -1,5 +1,12 @@
-.page{
+
+
+.page {
     background-color: #9392a8;
+}
+
+NavigationPage {
+    -maui-bar-background-color: #492a59;
+    -maui-bar-text-color: white;
 }
 
 .classPicker {
